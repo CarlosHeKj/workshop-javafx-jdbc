@@ -32,8 +32,14 @@
 			<children>
 				<Label text="Id" />
 				<Label text="Name" GridPane.rowIndex="1" />
+            <Label text="Email" GridPane.rowIndex="2" />
+            <Label text="Birth Date" GridPane.rowIndex="3" />
 				<TextField fx:id="txtId" editable="false" prefHeight="16.0" prefWidth="233.0" GridPane.columnIndex="1" />
 				<TextField fx:id="txtName" prefHeight="15.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtEmail" prefHeight="8.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="dpBirthDate" prefHeight="9.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtBaseSalary" prefHeight="10.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
 				<Label fx:id="labelErrorName" prefHeight="17.0" prefWidth="151.0" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
 					<font>
 						<Font size="15.0" />
@@ -45,13 +51,8 @@
       						<Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" prefHeight="25.0" prefWidth="66.0" text="Cancel" />
 					</children>
 				</HBox>
-            <Label text="Email" GridPane.rowIndex="2" />
-            <Label text="Birth Date" GridPane.rowIndex="3" />
             <Label text="Base Salary" GridPane.rowIndex="4" />
             <Label text="Department" GridPane.rowIndex="5" />
-            <TextField fx:id="txtEmail" prefHeight="8.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="txtBaseSalary" prefHeight="10.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <DatePicker fx:id="dpBirthDate" prefHeight="9.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label fx:id="labelErrorEmail" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font size="13.0" />
@@ -67,7 +68,6 @@
                   <Font size="13.0" />
                </font>
             </Label>
-            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
 			</children>
 		</GridPane>
 	</children>
